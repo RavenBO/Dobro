@@ -6,4 +6,9 @@ $(document).ready(function(){
         autoplaySpeed: 1500,
         arrows: false,
     });
+    $('.about-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: true
+    });
   });

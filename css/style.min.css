@@ -46,6 +46,38 @@
   height: 800px;
 }
 
+.about {
+  margin-top: 200px;
+}
+.about-item {
+  width: 550px;
+  height: 800px;
+  overflow: hidden;
+  border: 1px;
+  padding-left: 10px;
+}
+.about-item__wrapper {
+  width: calc(200% + 40px);
+  display: flex;
+}
+.about-item__image {
+  width: 550px;
+  height: 750px;
+  position: relative;
+}
+.about-item__image img {
+  width: 100%;
+}
+.about-item__title {
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 20px;
+  text-align: center;
+}
+.about-item__text {
+  margin-left: 20px;
+}
+
 body {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }/*# sourceMappingURL=style.min.css.map */
