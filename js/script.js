@@ -7,8 +7,9 @@ $(document).ready(function(){
         arrows: false,
     });
     $('.about__cards').slick({
-        lazyLoad: 'ondemand',
+        slideToSwipe: true,
         slidesToShow: 3,
+        responsive: true,
         slidesToScroll: 1,        
         arrows: true,
         prevArrow:'<button type="button" class="slick-prev"><img src="img/prev.png"></button>',

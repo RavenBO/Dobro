@@ -83,7 +83,7 @@
   height: 100px;
 }
 .about__cards {
-  margin-top: 170px;
+  margin-top: 30px;
 }
 .about__cards .slick-prev {
   outline: none;
@@ -185,6 +185,30 @@
 }
 .about-item__image img {
   width: 100%;
+}
+
+.therapy {
+  min: height 300px;
+  margin-top: 170px;
+}
+.therapy__upImage {
+  float: right;
+}
+.therapy__downImage {
+  float: left;
+}
+.therapy__descr {
+  font-weight: 900;
+  font-size: 20px;
+}
+.therapy__title {
+  text-transform: uppercase;
+  font-size: 60px;
+  color: #00004D;
+  font-weight: 900;
+}
+.therapy__title span {
+  color: #996600;
 }
 
 body {
