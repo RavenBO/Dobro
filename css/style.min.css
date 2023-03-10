@@ -10,7 +10,7 @@
 }
 .navbar__title {
   margin-top: 15px;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 900;
   color: #00004D;
 }
@@ -27,7 +27,7 @@
 }
 .navbar__menu li {
   display: inline;
-  margin-left: 15px;
+  margin-left: 10px;
   font-size: 18px;
   font-weight: 900;
 }
@@ -126,7 +126,7 @@
 }
 .about__descr {
   font-size: 22px;
-  font-weight: 900;
+  font-weight: 400;
   margin: 0 auto;
   text-align: left;
   line-height: 38px;
@@ -149,7 +149,7 @@
 .about-item__content__title {
   margin-top: 10px;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -209,6 +209,62 @@
 }
 .therapy__title span {
   color: #996600;
+}
+
+.zoo {
+  min-height: 300px;
+  margin-top: 120px;
+}
+.zoo__text {
+  display: flex;
+  justify-content: space-between;
+}
+.zoo__title {
+  text-transform: uppercase;
+  width: 700px;
+  font-size: 60px;
+  color: #00004D;
+  font-weight: 900;
+}
+.zoo__title span {
+  color: #996600;
+}
+.zoo__descr {
+  font-weight: 400;
+  font-size: 22px;
+  width: 700px;
+  margin-left: 30px;
+}
+.zoo__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.zoo__upImage {
+  width: 681px;
+  height: 774px;
+  margin-left: 32px;
+}
+.zoo__upImage img {
+  width: 100%;
+  display: block;
+}
+.zoo__midlleImage {
+  width: 788px;
+  height: 837px;
+}
+.zoo__midlleImage img {
+  width: 100%;
+  display: block;
+}
+.zoo__downImage {
+  width: 681px;
+  height: 774px;
+}
+.zoo__downImage img {
+  display: block;
+  width: 100%;
 }
 
 body {
