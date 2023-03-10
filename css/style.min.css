@@ -11,7 +11,7 @@
 .navbar__title {
   margin-top: 15px;
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 900;
   color: rgb(0, 0, 77);
 }
 .navbar__logo {
@@ -28,8 +28,8 @@
 .navbar__menu li {
   display: inline;
   margin-left: 15px;
-  font-size: 17px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 900;
 }
 .navbar__menu a {
   color: black;
@@ -41,43 +41,85 @@
 .slider {
   margin-top: 60px;
 }
+.slider__inner div {
+  border-radius: 25px;
+}
 .slider__inner img {
   width: 100%;
   height: 800px;
 }
 
 .about {
-  margin-top: 200px;
+  margin-top: 180px;
+}
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  grid-gap: 20px;
+}
+.about__header {
+  justify-content: space-between;
+}
+.about__title {
+  width: 260px;
+  font-weight: 900;
+  font-size: 60px;
+  color: rgb(0, 0, 77);
+  margin-top: -16px;
+  text-align: center;
+  margin: 0 auto;
+}
+.about__descr {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 38px;
 }
 .about-item {
-  width: 550px;
-  height: 800px;
+  width: 380px;
+  min-height: 390px;
   overflow: hidden;
-  border: 1px;
-  padding-left: 10px;
 }
 .about-item__wrapper {
+  margin-top: 50px;
   width: calc(200% + 40px);
   display: flex;
 }
+.about-item__content {
+  width: 50%;
+  margin-left: 10px;
+  transform: translateX(-105%);
+}
+.about-item__content__title {
+  margin-top: 10px;
+  text-align: left;
+}
+.about-item__content_active {
+  transform: translateX(0%);
+}
+.about-item__list {
+  width: 49%;
+  margin-left: 10px;
+  transform: translateX(0%);
+  transition: 0.5s;
+}
+.about-item__list_active {
+  transform: translateX(-105%);
+}
+.about-item__list__link {
+  color: black;
+}
+.about-item__list__link:hover {
+  text-decoration: none;
+  color: black;
+}
 .about-item__image {
-  width: 550px;
-  height: 750px;
-  position: relative;
-}
-.about-item__image img {
-  width: 100%;
-}
-.about-item__title {
-  font-size: 17px;
-  font-weight: 400;
-  margin-top: 20px;
-  text-align: center;
-}
-.about-item__text {
-  margin-left: 20px;
+  width: 92%;
+  display: block;
 }
 
 body {
   padding-bottom: 60px;
+  background-image: url(../../bg/bg_test.jpg);
 }/*# sourceMappingURL=style.min.css.map */
