@@ -27,4 +27,6 @@ $(document).ready(function(){
     };
     toggleSlide('.about-item__link');
     toggleSlide('.about-item__list__link');
+
+    $('input[name=phone]').mask("+38 (999) 999-99-99");
   });

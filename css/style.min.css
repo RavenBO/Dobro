@@ -1,6 +1,6 @@
 * {
   font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
+  padding: 0px;
 }
 
 .navbar {
@@ -433,5 +433,5 @@
 }
 
 body {
-  background-image: url(../bg/bg_test.jpg);
+  background: url(../bg/bg_test.jpg);
 }/*# sourceMappingURL=style.min.css.map */
