@@ -13,10 +13,10 @@
 }
 .navbar__title {
   margin-top: 15px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 900;
   color: #00004D;
-  width: 190px;
+  width: 210px;
   text-transform: uppercase;
 }
 .navbar__logo {
@@ -39,7 +39,7 @@
 .navbar__menu li {
   display: block;
   margin-left: 15px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 900;
   transition: 0.5s all;
   text-transform: uppercase;
@@ -53,7 +53,7 @@
 }
 .navbar__menu a:hover {
   text-decoration: none;
-  background: #bf891d;
+  background: #f5bb47;
   color: #00004D;
   width: 110%;
   height: 30px;
@@ -69,8 +69,9 @@
   background: none;
   color: #00004D;
   font-weight: 900;
-  font-size: 22px;
+  font-size: 20px;
   border-color: #00004D;
+  text-transform: uppercase;
 }
 .btn__donate {
   display: block;
@@ -298,8 +299,6 @@
 }
 
 .contacs {
-  display: flex;
-  flex-direction: row;
   margin-top: 120px;
   min-height: 300p;
 }
@@ -322,8 +321,15 @@
 }
 .contacs__wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px;
   margin-top: 20px;
+}
+.contacs__social {
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 .contacs__socIcons {
   width: 35px;
@@ -336,6 +342,10 @@
 .contacs__socIcons:first-child {
   margin-top: 0px;
 }
+.contacs__adress {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
 .contacs__city {
   width: 236px;
   height: 66px;
@@ -343,7 +353,7 @@
   font-size: 20px;
 }
 .contacs__phoneNumbers {
-  margin-top: 63px;
+  margin-top: 50px;
 }
 .contacs__phoneNumbers a {
   display: block;
@@ -355,8 +365,73 @@
   text-decoration: none;
   color: black;
 }
+.contacs-form {
+  grid-column: 2/4;
+  grid-row: 1/4;
+  margin-left: 200px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.contacs-form__title {
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #00004D;
+}
+.contacs-form__name {
+  width: 387px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #00004D;
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 24px;
+  background: #f7dda8;
+  color: #00004D;
+}
+.contacs-form__phoneNumber {
+  width: 387px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #00004D;
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 15px;
+  background: #f7dda8;
+  color: #00004D;
+}
+.contacs-form__descr {
+  width: 387px;
+  height: 169px;
+  border-radius: 10px;
+  border: 1px solid #00004D;
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 15px;
+  background: #f7dda8;
+  color: #00004D;
+}
+.contacs-form__btn {
+  margin-top: 25px;
+  width: 250px;
+  height: 46px;
+  font-size: 20px;
+}
+.contacs-form__btn:hover {
+  width: 270px;
+  height: 66px;
+  font-size: 20px;
+}
+
+.maps {
+  min-height: 200px;
+  width: 100%;
+  border-radius: 25px;
+}
 
 body {
-  padding-bottom: 60px;
   background-image: url(../bg/bg_test.jpg);
 }/*# sourceMappingURL=style.min.css.map */
