@@ -1,6 +1,5 @@
 * {
   font-family: "Roboto", sans-serif;
-  padding: 0px;
 }
 
 .navbar {
@@ -53,13 +52,13 @@
 }
 .navbar__menu a:hover {
   text-decoration: none;
-  background: #f5bb47;
+  background: #bd901a;
   color: #00004D;
   width: 110%;
   height: 30px;
   padding-right: 10px;
   text-align: center;
-  box-shadow: 5px 5px 5px #00004D;
+  box-shadow: 5px 5px 5px #bd901a;
   transition: 0.5s all;
 }
 
@@ -81,14 +80,15 @@
   transition: 0.5s;
 }
 .btn__donate:hover {
-  background: #cc9900;
+  background: #00004D;
   width: 250px;
   height: 100px;
   transion: 0.5s;
   border-radius: 25px;
-  border-color: #996600;
-  box-shadow: -10px -5px 5px #996600;
+  border-color: #00004D;
+  box-shadow: -10px -5px 5px #00004D;
   font-size: 30px;
+  color: #bd901a;
 }
 
 .slider {
@@ -148,7 +148,7 @@
   text-transform: uppercase;
 }
 .about__title span {
-  color: #996600;
+  color: #00004D;
 }
 .about__descr {
   font-size: 20px;
@@ -239,7 +239,7 @@
   font-weight: 900;
 }
 .therapy__title span {
-  color: #996600;
+  color: #00004D;
 }
 
 .zoo {
@@ -258,7 +258,7 @@
   font-weight: 900;
 }
 .zoo__title span {
-  color: #996600;
+  color: #00004D;
 }
 .zoo__descr {
   font-weight: 900;
@@ -309,7 +309,7 @@
   font-weight: 900;
 }
 .contacs__title span {
-  color: #996600;
+  color: #00004D;
 }
 .contacs__link {
   text-decoration: none;
