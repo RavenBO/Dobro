@@ -29,4 +29,13 @@ $(document).ready(function(){
     toggleSlide('.about-item__list__link');
 
     $('input[name=phone]').mask("+38 (999) 999-99-99");
+    $('.news-item__link').click(function(e) {
+        e.preventDefault();
+        $('.news-item__descr-long').slideToggle();
+        if ($('.news-item__link').text() == "Детальніше...") {
+          $(this).text("Згорнути")
+        } else {
+          $(this).text("Детальніше...")
+        }
+      });
   });
