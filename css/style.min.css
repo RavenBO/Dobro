@@ -434,7 +434,16 @@
 }
 
 .news {
-  margin-top: 170px;
+  margin-top: 100px;
+}
+.news__title {
+  font-weight: 900;
+  font-size: 60px;
+  color: #00004D;
+  text-transform: uppercase;
+}
+.news-item {
+  margin-top: 100px;
 }
 .news-item__wrapper {
   margin-left: 100px;
