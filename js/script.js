@@ -15,6 +15,13 @@ $(document).ready(function(){
         prevArrow:'<button type="button" class="slick-prev"><img src="img/prev.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="img/next.png"></button>',
     });
+    $('.news__wrapper').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow:'<button type="button" class="slick-prev"><img src="img/prev.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="img/next.png"></button>',
+    }); 
 
     function toggleSlide(item){
         $(item).each(function(i) {
@@ -29,13 +36,22 @@ $(document).ready(function(){
     toggleSlide('.about-item__list__link');
 
     $('input[name=phone]').mask("+38 (999) 999-99-99");
-    $('.news-item__link').click(function(e) {
-        e.preventDefault();
-        $('.news-item__descr-long').slideToggle();
-        if ($('.news-item__link').text() == "Детальніше...") {
-          $(this).text("Згорнути")
-        } else {
-          $(this).text("Детальніше...")
-        }
-      });
+    function News(item){
+        $(item).each(function(i) {
+            $(this).on('click', function(e){
+                e.preventDefault();
+                $('.news-item__descr-long').eq(i).toggleClass('news-item__descr-long_active');
+                if ($('.news-item__link').eq(i).text() == "Детальніше...") {
+                    $(this).text("Згорнути")
+                  } else {
+                    $(this).text("Детальніше...")
+                  }
+            })
+        });       
+    };
+    
+    News('.news-item__link');
+    
+    
+    
   });
