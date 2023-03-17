@@ -118,10 +118,13 @@ $(document).ready(function(){
         $('.overlay').fadeOut();
     });
     $(window).scroll(function(){
-        if($(this).scrollTop()>1600 && $(this).scrollTop()<6600){
+        if($(this).scrollTop()>1600 && $(this).scrollTop()<6500){
             $('.upbtn').fadeIn();
         } else{
             $('.upbtn').fadeOut();
         }
+    });
+    $('#pay').on('click',function(){
+        window.open("https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJhbW91bnQiOjUsImN1cnJlbmN5IjoiVUFIIiwiZGVzY3JpcHRpb24iOiLQnNGW0Lkg0YLQvtCy0LDRgCIsInB1YmxpY19rZXkiOiJpNTA3MzUyMjU5MyIsImxhbmd1YWdlIjoidWsifQ==&signature=gJEULjlj1vFi7JrfifKwoeYNpVg=", "_blank");
     });
   });
