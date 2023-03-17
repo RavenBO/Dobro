@@ -300,7 +300,7 @@
 
 .contacs {
   margin-top: 120px;
-  min-height: 300p;
+  min-height: 300px;
 }
 .contacs__title {
   text-transform: uppercase;
@@ -477,7 +477,7 @@
 }
 .news-item__image img {
   border-radius: 45px;
-  width: 97%;
+  width: 96%;
   height: 100%;
 }
 .news-item__descr {
@@ -499,7 +499,7 @@
 }
 .news-item__descr-long_active {
   margin-top: 0px;
-  border-radius: 45px;
+  border-radius: 44px;
   transition: 1s;
   transform: translateY(-480px);
   width: 100%;
@@ -518,6 +518,19 @@
 .news-item__link:hover {
   text-decoration: none;
   color: #00004D;
+}
+
+.forms .error {
+  color: #00004D;
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 400;
+  border: 1px solid red;
+}
+.forms label.error {
+  border: none;
+  width: 355px;
 }
 
 body {

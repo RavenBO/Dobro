@@ -51,7 +51,31 @@ $(document).ready(function(){
     };
     
     News('.news-item__link');
-    
-    
-    
+    function validateForms(form){
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                descr: {
+                    required: true,
+                    minlength: 2
+                }
+            },
+            messages: {
+                name: {
+                    required: "Будь-ласка, введіть своє ім'я",
+                    minlength: jQuery.validator.format("Введіть {0} символа!")
+                  },
+                phone: "Будь-ласка, введіть свій номер телефона",
+                descr: {
+                  required: "Будь-ласка, коротко опишить причину вашого звернення звернення",
+                  minlength: jQuery.validator.format("Введите {0} символа!")
+                }
+            }
+        });
+    };
+    validateForms('#contacs-form');
   });
