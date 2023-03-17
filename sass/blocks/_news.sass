@@ -30,17 +30,17 @@
     &-item
         margin-top: 100px
         overflow: hidden
-        height: 680px
+        height: 730px
 
         &__wrapper
             display: grid
-            grid-template-columns: repeat(3, 380px)
-            grid-template-rows: repeat(1, 534px)
-            grid-gap: 10px
+            grid-template-columns: repeat(3, 375px)
+            grid-template-rows: repeat(1, 550px)
             
-        &__image
+        &__image             
             img
-                width: 100%
+                border-radius: 45px
+                width: 97%
                 height: 100%
             // &:nth-child(1)                
             //     grid-column: 1/2
@@ -54,7 +54,8 @@
             font-size: $dFt
             transition: 0.5s
             &-long
-                padding: 0 20px
+                margin-top: 100px
+                padding: 0 40px
                 padding-top: 30px
                 height: 330px 
                 font-weight: 900
@@ -63,12 +64,13 @@
                 transition: 1s
                 vertical-align: bottom                 
                 &_active
+                    margin-top: 0px
+                    border-radius: 45px
                     transition: 1s
                     transform: translateY(-480px)
                     width: 100%
                     text-align: center
-        &__link
-            
+        &__link            
             position: relative
             color: $ScdColor
             font-size: $bFt
