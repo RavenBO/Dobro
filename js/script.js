@@ -35,7 +35,16 @@ $(document).ready(function(){
     toggleSlide('.about-item__link');
     toggleSlide('.about-item__list__link');
 
-    $('input[name=phone]').mask("+38 (999) 999-99-99");
+    $('input[name=phone]').mask("+380 (99) 999-99-99");//.on('click', function(){
+    //    $(this).focus();
+    // });
+    function CusrorStart(item){
+        $(item).on('click',function(){
+            $(this).focus();
+        })
+    };
+    CusrorStart('input[name=phone]');
+
     function News(item){
         $(item).each(function(i) {
             $(this).on('click', function(e){
@@ -78,4 +87,22 @@ $(document).ready(function(){
         });
     };
     validateForms('#contacs-form');
+    $('form').submit(function(e){
+        e.preventDefault();
+        
+        if(!$(this).valid()){
+            return;
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function(){
+            $(this).find("input").val(" ");
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
   });
