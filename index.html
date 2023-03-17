@@ -177,20 +177,19 @@
                     </div>
                     
                 </div>
-            </div>    
-                <div class="zoo__wrapper">
-                   
+                <div class="zoo__wrapper">                   
                     <div class="zoo__upImage">
                         <img src="img/1.png" alt="">
                     </div>                    
-                    <div class="zoo__midlleImage">
-                        <img src="img/2.png" alt="">
-                    </div>
-                    
                     <div class="zoo__downImage">
+                        <img src="img/2.png" alt="">
+                    </div>                    
+                    <div class="zoo__midlleImage">
                         <img src="img/3.png" alt="">
                     </div>                    
-                </div>              
+                </div>  
+            </div>    
+                            
         </section>
         <section class="news">
             <div class="container">
@@ -342,10 +341,10 @@
                     <div id="contacs" class="contacs__title">Кон<span>такти</span></div>
                     <form action="" class="contacs-form">
                         <div class="contacs-form__title">Залиште заявку</div>
-                        <input type="text" class="contacs-form__name" placeholder="Як вас звуть?">
+                        <input name="name" type="text" class="contacs-form__name" placeholder="Як вас звуть?">
                         <input name="phone" class="contacs-form__phoneNumber" placeholder="Ваш номер телефону">
-                        <textarea name="" id="" cols="30" rows="10" class="contacs-form__descr" placeholder="Опис"></textarea>
-                        <input type="submit" class="contacs-form__btn btn btn__donate" value="Залишити заявку">
+                        <textarea name="descr" id="" cols="30" rows="10" class="contacs-form__descr" placeholder="Опис"></textarea>
+                        <button type="submit" class="contacs-form__btn btn btn__donate" >Залишити заявку</button>
                     </form>
                     <div class="contacs__adress">
                         <div class="contacs__city">Київська область
@@ -392,6 +391,7 @@
         <script type="text/javascript" src="js/slick.min.js"></script>
         <script src="js/readmore.min.js"></script>
         <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
         <script src="js/script.js"></script>           
 </body>
 </html>

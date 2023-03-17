@@ -271,27 +271,27 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 30px;
 }
 .zoo__upImage {
-  width: 681px;
-  height: 774px;
-  margin-left: 32px;
+  width: 550px;
+  height: 588px;
 }
 .zoo__upImage img {
   width: 100%;
   display: block;
 }
 .zoo__midlleImage {
-  width: 788px;
-  height: 837px;
+  width: 650px;
+  height: 695px;
 }
 .zoo__midlleImage img {
   width: 100%;
   display: block;
 }
 .zoo__downImage {
-  width: 681px;
-  height: 774px;
+  width: 550px;
+  height: 588px;
 }
 .zoo__downImage img {
   display: block;
