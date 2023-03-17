@@ -44,7 +44,6 @@ $(document).ready(function(){
         })
     };
     CusrorStart('input[name=phone]');
-
     function News(item){
         $(item).each(function(i) {
             $(this).on('click', function(e){
@@ -68,6 +67,10 @@ $(document).ready(function(){
                     minlength: 2
                 },
                 phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
                 descr: {
                     required: true,
                     minlength: 2
@@ -79,6 +82,7 @@ $(document).ready(function(){
                     minlength: jQuery.validator.format("Введіть {0} символа!")
                   },
                 phone: "Будь-ласка, введіть свій номер телефона",
+                email:"Ведіть вашу електрону адресу у форматі example@mail.com",
                 descr: {
                   required: "Будь-ласка, коротко опишить причину вашого звернення звернення",
                   minlength: jQuery.validator.format("Введите {0} символа!")

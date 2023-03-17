@@ -3,7 +3,13 @@
 }
 
 .navbar {
-  background: rgba(255, 255, 255, 0.3);
+  background: url(../bg/bg_menu.png);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 .navbar__wrapper {
   display: flex;
@@ -92,7 +98,7 @@
 }
 
 .slider {
-  margin-top: 60px;
+  margin-top: 120px;
 }
 .slider__inner div {
   border-radius: 25px;
