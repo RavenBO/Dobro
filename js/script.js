@@ -91,13 +91,13 @@ $(document).ready(function(){
         });
     };
     validateForms('#contacs-form');
+    validateForms('#modal-form');
     $('form').submit(function(e){
         e.preventDefault();
         
         if(!$(this).valid()){
             return;
         }
-
         $.ajax({
             type: "POST",
             url: "mailer/smart.php",
@@ -108,5 +108,20 @@ $(document).ready(function(){
             $('form').trigger('reset');
         });
         return false;
+    });
+    $('.messagebtn').on('click', function(e){
+        e.preventDefault();
+        $('.overlay').fadeIn();
+    });
+    $('.modal-form__close').on('click', function(e){
+        e.preventDefault();
+        $('.overlay').fadeOut();
+    });
+    $(window).scroll(function(){
+        if($(this).scrollTop()>1600 && $(this).scrollTop()<6600){
+            $('.upbtn').fadeIn();
+        } else{
+            $('.upbtn').fadeOut();
+        }
     });
   });

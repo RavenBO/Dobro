@@ -15,12 +15,12 @@
 </head>
 <body>
         <nav>
-            <div class="container">
+            <div id="pageup" class="container">
                 <div class="navbar">
                     <div class="navbar__wrapper">
                         <div class="navbar__logo"><img src="logo/logo.png" alt="logotype">
                         </div>
-                        <div class="navbar__title">ГО "Доброчинність інвалідам"</div>
+                        <div class="navbar__title"><a href="#">ГО "Доброчинність інвалідам"</a></div>
                         <ul class="navbar__menu">
                             <li><a href="#aboutUs">Про нас</a></li>
                             <li><a href="#therapy">Іпотерапія</a></li>
@@ -67,7 +67,7 @@
                                 <a href="#" class="about-item__link">
                                     <img src="slider/slide_1_1.png" alt="man with child on horse" class="about-item__image">
                                 </a>
-                                <div class="about-item__content__title">Зоо- та іпотерапія
+                                <div class="about-item__content__title">Зоо та іпотерапія
                                 </div>   
                             </div>
                             <div class="about-item__list">
@@ -354,7 +354,6 @@
                         </div>
                        <div class="contacs__phoneNumbers">
                         <a href="tel:+380950955777" class="contacs_phone1">+38 (095) 095-57-77</a>
-                        <a href="tel:+380504457777" class="contacs_phone2">+38 (050) 445-77-77</a>
                        </div>
                     </div>
                     <div class="contacs__social">
@@ -369,7 +368,7 @@
                             </a>
                         </div>
                         <div class="contacs__socIcons"> 
-                            <a href="" target="_blank" class="contacs__link">
+                            <a href="https://www.youtube.com/channel/UCTwEQDwFcWBmr125opsYc0A" target="_blank" class="contacs__link">
                                 <img src="icons/youtube.png" alt="telegram icon">                                
                             </a>
                         </div>
@@ -383,15 +382,35 @@
                 </div>                    
             </div>
         </section>
+        <div class="overlay">
+            <form id="modal-form" action="" class=" forms">
+                <a href="#" class="modal-form__close"><img src="icons/close.png" alt=""></a>
+                <div class="contacs-form__title">Залиште заявку</div>
+                <input type="text" name="name" type="text" class="contacs-form__name" placeholder="Як вас звуть?">
+                <input type="email" name="email" type="text" class="contacs-form__name" placeholder="Ваша електронна пошта">
+                <input  name="phone" class="contacs-form__phoneNumber" placeholder="Ваш номер телефону">
+                <textarea name="descr" id="" cols="30" rows="10" class="contacs-form__descr" placeholder="Опис"></textarea>
+                <button type="submit" class="contacs-form__btn btn btn__donate" >Залишити заявку</button>
+            </form>
+        </div>
+        <a href="" class="messagebtn">
+            <img src="icons/discussion.png" alt="" class="message message_animated">
+        </a>
+    
+        <a href="#pageup" class="upbtn">            
+            <img src="img/up_btn.png" alt="" class="">
+        </a>     
         
         <section class="maps">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d320.1502303424474!2d31.462098582069302!3d50.06378147393968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d442e5ea8537eb%3A0xf4bf4ae8f5df0b2a!2z0KLRg9GA0LjRgdGC0LjRh9C90L4t0LXRgtC90L7Qs9GA0LDRhNGW0YfQvdC40Lkg0LrQvtC80L_Qu9C10LrRgSAi0KHRgtCw0YDQsCDQk9GA0LXQsdC70Y8i!5e0!3m2!1sru!2sua!4v1678555944550!5m2!1sru!2sua" width="100%" height="450" style="border:0; border-radius : 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+        
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="js/slick.min.js"></script>
         <script src="js/jquery.maskedinput.min.js"></script>
         <script src="js/jquery.validate.min.js"></script>
-        <script src="js/script.js"></script>           
+        <script src="js/script.js"></script>  
+       
 </body>
 </html>
