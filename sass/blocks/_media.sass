@@ -338,12 +338,14 @@
                 width: calc(165% + 60px)    
                 margin-left: 0
     .therapy
-        
+        margin-top: 100px
         &__title
             font-size: 30px
         &__upImage
+            margin: 0 auto
             width: 280px
             height: 300px
+
             float: none 
             img
                 width: 100%
@@ -359,13 +361,15 @@
     .zoo
         &__title
             font-size: 30px
-            width: 310px
+            width: 100%
         &__text
             flex-direction: column
             justify-content: center
+            align-items: center
         &__descr
             width: 280px
             margin-left: 0px
+            text-align: left
         &__upImage
             display: none
         &__downImage
@@ -375,37 +379,46 @@
         &__title
             font-size: 30px
         &-item
-            width: 280px
+            width: 300px
             &__wrapper
-                margin-left: 20px                
-                width:640px
-                grid-template-columns: 310px
+                margin-left: 0px             
+                width:100%
+                grid-template-columns: 300px
                 grid-template-rows: 440px
+                justify-content: center
             &__image
-                width: 280px
+                width: 300px
+                margin-left: 8px
                 &:nth-child(2)                    
                     display: none
             &__descr
                 height: 170px
                 font-size: 16px
+                
                 &-long
                     margin-top: 120px
                     font-size: 14px
                     line-height: 15px
-                    &_active
+                    &_active                       
                         padding: 5px 25px
-                        width: 280px
+                        width: 290px
                         margin: 0 auto
                         height: auto
-                        transform: translateY(calc(-100% - 250px))
+                        transform: translateY(calc(-100% - 180px))
+                        
             &__link
-                margin-top: 10px
+                text-align: center
+                margin-top: -50px
+                width: 100%
+                font-size: 22px
     .contacs
-        margin-bottom: 30px
+        margin: 30px auto 
+        &__title
+            font-size: 30px
         &__wrapper
-            width: 310px
             grid-template-columns: 310px
-            grid-template-rows: repeat(3, auto) 
+            grid-template-rows: repeat(3, auto)
+            justify-content: center 
         &__social
             grid-column: 1/2
             grid-row: 3/4
