@@ -1020,6 +1020,8 @@
     line-height: 18px;
   }
   .about__descr img {
+    display: block;
+    margin: 0 auto;
     float: none;
     height: 350px;
     width: 310px;
