@@ -26,7 +26,14 @@ $(document).ready(function(){
                     slidesToShow: 1,
                     arrows:false,
                 }
-            }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    arrows:false,
+                }
+            },
             ]
         });
     $('.news__wrapper').slick({
@@ -137,13 +144,13 @@ $(document).ready(function(){
         e.preventDefault();
         $('.overlay').fadeOut();
     });
-    $(window).scroll(function(){
-        if($(this).scrollTop()>1600 && $(this).scrollTop()<6500){
-            $('.upbtn').fadeIn();
-        } else{
-            $('.upbtn').fadeOut();
-        }
-    });
+    // $(window).scroll(function(){
+    //     if($(this).scrollTop()>1600 && $(this).scrollTop()<6500){
+    //         $('.upbtn').fadeIn();
+    //     } else{
+    //         $('.upbtn').fadeOut();
+    //     }
+    // });
     $('#pay').on('click',function(){
         window.open("https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJhbW91bnQiOjUsImN1cnJlbmN5IjoiVUFIIiwiZGVzY3JpcHRpb24iOiLQn9C+0LbQtdGA0YLQstGD0LLQsNC90L3RjyIsInB1YmxpY19rZXkiOiJpNTA3MzUyMjU5MyIsImxhbmd1YWdlIjoidWsifQ==&signature=CQyI7Za9rd6jAcwRPAqTX7xadeg=", "_blank");
     });

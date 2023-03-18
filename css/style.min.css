@@ -666,6 +666,7 @@
   .about-item {
     width: 250px;
     height: 490px;
+    overflow: hidden;
   }
   .about-item__wrapper {
     width: calc(165% + 40px);
@@ -744,6 +745,7 @@
   .news-item__descr-long {
     margin-top: 150px;
     font-size: 16px;
+    width: 100px;
   }
   .news-item__descr-long_active {
     padding-top: 80px;
@@ -1001,11 +1003,12 @@
     transform: rotate(45deg);
   }
   .slider {
-    width: 310px;
+    width: 100%;
+    height: 400;
     margin-top: 80px;
   }
   .slider__inner img {
-    height: 200px;
+    height: 400px;
   }
   .about__title {
     font-size: 30px;
@@ -1052,6 +1055,7 @@
   }
   .zoo__title {
     font-size: 30px;
+    width: 310px;
   }
   .zoo__text {
     flex-direction: column;
@@ -1083,13 +1087,13 @@
     grid-template-rows: 440px;
   }
   .news-item__image {
-    width: 290px;
+    width: 280px;
   }
   .news-item__image:nth-child(2) {
     display: none;
   }
   .news-item__descr {
-    height: 120px;
+    height: 170px;
     font-size: 16px;
   }
   .news-item__descr-long {
@@ -1102,30 +1106,51 @@
     width: 280px;
     margin: 0 auto;
     height: auto;
-    transform: translateY(calc(-100% - 200px));
+    transform: translateY(calc(-100% - 250px));
   }
   .news-item__link {
     margin-top: 10px;
   }
+  .contacs {
+    margin-bottom: 30px;
+  }
   .contacs__wrapper {
+    width: 310px;
     grid-template-columns: 310px;
     grid-template-rows: repeat(3, auto);
   }
   .contacs__social {
-    width: 60px;
     grid-column: 1/2;
     grid-row: 3/4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    about-item: center;
+    margin-top: 20px;
+  }
+  .contacs__socIcons {
+    margin-top: 0px;
   }
   .contacs-form {
     grid-column: 1/2;
     grid-row: 1/2;
-    margin-left: 0px;
+    margin: 0 auto;
+    margin-top: 20px;
   }
   .contacs-form input {
     width: 280px;
   }
   .contacs-form textarea {
     width: 280px;
+  }
+  .contacs__adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contacs__city {
+    width: 200px;
   }
   .maps {
     display: none;
