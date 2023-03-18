@@ -7,20 +7,39 @@ $(document).ready(function(){
         arrows: false,
     });
     $('.about__cards').slick({
-        slideToSwipe: true,
         slidesToShow: 3,
-        responsive: true,
-        slidesToScroll: 1,        
+        slidesToScroll: 1,      
         arrows: true,
         prevArrow:'<button type="button" class="slick-prev"><img src="img/prev.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="img/next.png"></button>',
-    });
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    arrows:false,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+            ]
+        });
     $('.news__wrapper').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
         prevArrow:'<button type="button" class="slick-prev"><img src="img/prev.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="img/next.png"></button>',
+        responsive:[{
+            breakpoint: 991,
+            settings: {
+                arrows: false,
+            }
+        }]
     }); 
 
     function toggleSlide(item){
