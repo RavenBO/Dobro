@@ -1,5 +1,6 @@
 @media (max-width: 1200px)
     .navbar
+        width: 1wh
         &__logo
             height: 70px
             width: 50px
@@ -197,7 +198,7 @@
             height: 388px
     .news
         &__title
-            font-size: 4    0px
+            font-size: 40px
             margin-left: 10px
         &-item 
             margin-top: 0
@@ -206,11 +207,11 @@
                 width:640px
                 grid-template-columns: repeat(2,320px)
                 grid-template-rows: 440px
-
             &__image
-                &:last-child
+                &:nth-child(3)                    
                     display: none
             &__descr
+                height: 120px
                 &-long
                     margin-top: 120px
                     font-size: 14px
@@ -219,7 +220,7 @@
                         width: 628px
                         margin: 0 auto
                         height: auto
-                        transform: translateY(calc(-100% - 180px))          
+                        transform: translateY(calc(-100% - 190px))          
         
     .contacs
         &__title
@@ -246,5 +247,171 @@
             &:hover
                 height: 46px
                 font-size: 18px
+@media( max-width: 767px  )
+    .navbar
+        height: 70px
+        margin: 0
+        &__menu
+            display: none
+            &_mobile
+                list-style-type: none  
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                position: fixed
+                top: 0
+                left: 0
+                width: 75%
+                height: 100vh
+                z-index: 3
+                background-color: rgba(0,0,0, 0.56)
+                font-size: 20px
+                transform: translateX(-100%)
+                transition: 0.5s
+                &_active
+                    transform: translateX(0%)
+                    transition: 0.5s
+                li
+                    display: block
+                    width: 100%
+                    text-align: center
+                    margin-top: 20px
+                    a
+                        color: #faf0be
+                        display: block
+                        &:hover 
+                            color: #faf0be
+                            text-decoration: none
+    .hamb
+        display: block
+        position: fixed
+        right: 14px
+        top: 10px
+        width: 30px
+        z-index: 3
+        margin-top: 10px
+        span
+            display: block
+            height: 3px
+            width: 100%
+            margin-bottom: 2px
+            background-color: #00004d
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: rotate(-45deg)
+                &:nth-child(2)
+                    display: none   
+                &:nth-child(3)
+                    transform: rotate(45deg)   
+    .slider
+        width: 310px
+        margin-top: 80px
+        &__inner
+            img
+                height: 200px
+    .about
+        &__title
+            font-size: 30px  
+        &__descr
+            line-height: 18px
+            img
+                height: 350px
+                width: 310px
+        &__cards
+            width: 310px
+        &-item            
+            &__link
+                width: 260px
+                height: 420px
+            &__wrapper
+                width: calc(165% + 60px)    
+                margin-left: 0
+    .therapy
+        &__title
+            font-size: 30px
+        &__upImage
+            width: 280px
+            height: 300px 
+            img
+                width: 100%
+                height: 100%
+        &__downImage
+            display: none
+        &__descr
+            display: none
+            &_mobile
+                display: block
+                font-weight: 900
+                font-size: 16px
+    .zoo
+        &__title
+            font-size: 30px
+        &__text
+            flex-direction: column
+            justify-content: center
+        &__descr
+            width: 280px
+            margin-left: 0px
+        &__upImage
+            display: none
+        &__downImage
+            display: none
+    .news
+        min-height: 700px
+        &__title
+            font-size: 30px
+        &-item
+            width: 280px
+            &__wrapper
+                margin-left: 20px                
+                width:640px
+                grid-template-columns: 310px
+                grid-template-rows: 440px
+            &__image
+                width: 290px
+                &:nth-child(2)                    
+                    display: none
+            &__descr
+                height: 120px
+                font-size: 16px
+                &-long
+                    margin-top: 120px
+                    font-size: 14px
+                    line-height: 15px
+                    &_active
+                        padding: 5px 25px
+                        width: 280px
+                        margin: 0 auto
+                        height: auto
+                        transform: translateY(calc(-100% - 200px))
+            &__link
+                margin-top: 10px
+    .contacs
+        &__wrapper
+            grid-template-columns: 310px
+            grid-template-rows: repeat(3, auto) 
+        &__social
+            width: 60px
+            grid-column: 1/2
+            grid-row: 3/4
+        &-form
+            grid-column: 1/2
+            grid-row: 1/2
+            margin-left: 0px
+            input
+                width: 280px
+            textarea
+                width: 280px
+                        
+    .maps
+        display: none
+          
+                
+
+    
 
         

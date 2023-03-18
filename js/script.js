@@ -24,6 +24,7 @@ $(document).ready(function(){
                 breakpoint: 767,
                 settings: {
                     slidesToShow: 1,
+                    arrows:false,
                 }
             }
             ]
@@ -146,4 +147,18 @@ $(document).ready(function(){
     $('#pay').on('click',function(){
         window.open("https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJhbW91bnQiOjUsImN1cnJlbmN5IjoiVUFIIiwiZGVzY3JpcHRpb24iOiLQn9C+0LbQtdGA0YLQstGD0LLQsNC90L3RjyIsInB1YmxpY19rZXkiOiJpNTA3MzUyMjU5MyIsImxhbmd1YWdlIjoidWsifQ==&signature=CQyI7Za9rd6jAcwRPAqTX7xadeg=", "_blank");
     });
+    ///// 
+
+
+    $('.hamb').on('click', function(){
+        $('.navbar__menu_mobile').toggleClass('navbar__menu_mobile_active');
+        $(this).toggleClass('hamb_active')
+    });
+    $('.navbar__menu_mobile_item').each(function(i){
+        $(this).on('click',function(){
+            $('.navbar__menu_mobile').toggleClass('navbar__menu_mobile_active');
+            $('.hamb').toggleClass('hamb_active')
+        })
+    });
+
   });
