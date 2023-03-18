@@ -1017,6 +1017,7 @@
     line-height: 18px;
   }
   .about__descr img {
+    float: none;
     height: 350px;
     width: 310px;
   }
@@ -1037,6 +1038,7 @@
   .therapy__upImage {
     width: 280px;
     height: 300px;
+    float: none;
   }
   .therapy__upImage img {
     width: 100%;
