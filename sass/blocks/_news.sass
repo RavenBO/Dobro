@@ -63,7 +63,31 @@
             &:hover
                 text-decoration: none
                 color: $ScdColor 
-        
+    .slick-dots
+    list-style-type: none
+    display: flex
+    flex-direction: row
+    justify-content: center
+    margin-left: 0
+    padding-left: 0
+    margin-top: -20px
+    position: relative
+    li
+        margin-left: 20px
+        &:first-child
+            margin-left: 0
+        button
+            display: block
+            width: 20px
+            height: 20px
+            padding: 0
+            border-radius: 100%
+            border: none
+            text-indent: -9999px
+            background: #bd901a
+        .slick-active
+                button
+                    background: #00004D        
             
         
             
